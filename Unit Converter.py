@@ -37,7 +37,6 @@ class Converter:
         output_type = input("Enter the type of number you want to convert to ( C / F / K) :")
         user_input = float(input("enter the number you want to convert :"))
 
-        # first convert whatever was entered into Celsius
         if input_type == "C":
             celsius = user_input
         elif input_type == "F":
@@ -48,7 +47,6 @@ class Converter:
             print("wrong type entered")
             return
 
-        # then convert from Celsius into whatever output type is wanted
         if output_type == "C":
             result = celsius
         elif output_type == "F":
